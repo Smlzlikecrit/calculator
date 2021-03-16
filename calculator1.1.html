@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles2.css">
+    
+    <title>Calculator 1</title>
+</head>
+<body>
+    <div class="container-calculator">
+        <div id="output"></div>
+        <div class="button-container">
+            <div class="button" id="b9"><input type="button" name="btn9" id="button9" value="9" onclick="NumbersValue()"></div>
+            <div class="button" id="b8"><input type="button" name="btn8" id="button8" value="8" onclick="NumbersValue()"></div>
+            <div class="button" id="b7"><input type="button" name="btn7" id="button7" value="7" onclick="NumbersValue()"></div>
+            <div class="button" id="plus"><input type="button" name="plusBtn" id="buttonPlus" value="+" onclick="OperatorCheck()"></div>
+    
+            <div class="button" id="b6"><input type="button" name="btn6" id="button6" value="6" onclick="NumbersValue()"></div>
+            <div class="button" id="b5"><input type="button" name="btn5" id="button5" value="5" onclick="NumbersValue()"></div>
+            <div class="button" id="b4"><input type="button" name="btn4" id="button4" value="4" onclick="appendNumber(this, 4)"></div>
+            <div class="button" id="minus"><input type="button" name="minusBtn" id="buttonMinus" value="-" onclick="OperatorCheck()"></div>
+    
+            <div class="button" id="b3"><input type="button" name="btn3" id="button3" value="3" onclick="NumbersValue()"></div>
+            <div class="button" id="b2"><input type="button" name="btn2" id="button2" value="2" onclick="NumbersValue()"></div>
+            <div class="button" id="b1"><input type="button" name="btn1" id="button1" value="1" onclick="NumbersValue()"></div>
+            <div class="button" id="divide"><input type="button" name="divideBtn" id="buttonDivide" value="/" onclick="OperatorCheck()"></div>
+    
+            <div class="button" id="b0"><input type="button" name="btn0" id="button0" value="0" onclick="NumbersValue()"></div>
+            <div class="button" id="equals"><input type="button" name="equalsBtn" id="buttonEquals" value="=" onclick="Compute()"></div>
+            <div class="button"><input type="button" name="multipleBtn" value="*" id="multiple" onclick="OperatorCheck()"></div>
+        </div>
+
+    </div>
+    <!-- Javascript -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
