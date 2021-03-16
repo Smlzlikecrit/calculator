@@ -36,26 +36,26 @@
 //     }
 // }
 
--------------------------------------------------
----- Make global variable: ----
+
+//---- Make global variable: ----
 let currentValue = 0;
 let previousValue = undefined;
 let operator = undefined;
 
----- 
+ 
 
 
 
 
----- Updating variable "currentValue" ----
+//---- Updating variable "currentValue" ----
 function UpdateCurrentValue(){
 currentValue = onclick(getElementThatWasClickedOn.value) //(could 'this' be used? 'onclick(this.value)' since this function will be called in many other button functions)
 }
 
----- Checking Operators ----
+//---- Checking Operators ----
 function OperatorCheck(){
-  console.log(querySlector("").value);
-    switch (x = getElementThatWasClickedOn.value){
+  console.log(querySlector(".operator").value);
+    switch (x = querySlector(".operator").value){
         case "/":
             let operator = "divide";                            //placeholder*
             previousValue = currentValue;                   //update the previousValue
